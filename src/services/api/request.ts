@@ -1,5 +1,5 @@
 export const authRequest = {
-  LOGIN: '/todos',
+  LOGIN: "/todos",
 };
 
 export default {

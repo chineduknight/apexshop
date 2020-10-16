@@ -1,11 +1,5 @@
-import React from 'react'
+import React from "react";
 
-const LoginTemplate = () => {
-  return (
-    <div>
-      Just testing template
-    </div>
-  )
-}
+const LoginTemplate = () => <div>Just testing template</div>;
 
-export default LoginTemplate
+export default LoginTemplate;

@@ -3,7 +3,7 @@ export type Status = "SUCCESS" | "REQUEST" | "ERROR";
 export function handleFetch<T = Record<string, any>>(
   state: T,
   status: Status,
-  payload:any,
+  payload: any,
   key?: keyof T,
   many = true
 ) {
@@ -21,7 +21,7 @@ export function handleFetch<T = Record<string, any>>(
       processing: false,
       processed: true,
       success: true,
-      data: data,
+      data,
       pagination,
     };
   } else {
@@ -49,7 +49,7 @@ export function handleFetch<T = Record<string, any>>(
   };
 }
 
-export function extractStatus(type:any) {
+export function extractStatus(type: any) {
   let status = type.split("_").pop();
 
   if (status !== "ERROR" && status !== "SUCCESS") {

@@ -1,8 +1,7 @@
 // import LandingPage from './LandingPage';
-import Login from './Login';
-import { LOGIN } from '../pagesPath';
-import withSuspense from 'components/HOC/WithSuspens';
-
+import withSuspense from "components/HOC/WithSuspens";
+import Login from "./Login";
+import { LOGIN } from "../pagesPath";
 
 export const publicRoutes = [
   // {
@@ -18,7 +17,7 @@ export const publicRoutes = [
 
   {
     path: LOGIN,
-    component:Login,
+    component: Login,
     // component: withSuspense({ page: "UnAuthPages/LoginPage" }),
     exact: true,
   },

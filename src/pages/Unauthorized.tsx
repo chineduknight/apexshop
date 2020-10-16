@@ -1,11 +1,5 @@
-import React from 'react'
+import React from "react";
 
-const Unauthorized = () => {
-  return (
-    <div>
-      Not Authorized
-    </div>
-  )
-}
+const Unauthorized = () => <div>Not Authorized</div>;
 
-export default Unauthorized
+export default Unauthorized;

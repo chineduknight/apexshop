@@ -1,21 +1,22 @@
 const commonState = {
-  processing:false,
-  processed:false,
-  success:false,
-  errors:{},
-  message:"",
-}
-export const defaultSingleObjectState:SingleObjectState ={
-  ...commonState,
-  data:{},
-}
+  processing: false,
+  processed: false,
+  success: false,
+  errors: {},
+  message: "",
+};
 
-export const defaultManyObjectState ={
+export const defaultSingleObjectState: SingleObjectState = {
   ...commonState,
-  data:[],
-  pagination:{
-    currentPage:"",
-    nextPage:"",
-    totalEntries:0
-  }
-}
+  data: {},
+};
+
+export const defaultManyObjectState = {
+  ...commonState,
+  data: [],
+  pagination: {
+    currentPage: "",
+    nextPage: "",
+    totalEntries: 0,
+  },
+};

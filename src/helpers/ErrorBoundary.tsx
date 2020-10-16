@@ -1,8 +1,11 @@
-import React from 'react'
+import React from "react";
 
 // more on error boundaries
-//https://reactjs.org/docs/error-boundaries.html
-export default class ErrorBoundary extends React.Component<{}, { hasError: boolean }> {
+// https://reactjs.org/docs/error-boundaries.html
+export default class ErrorBoundary extends React.Component<
+  {},
+  { hasError: boolean }
+> {
   constructor(props) {
     super(props);
     this.state = { hasError: false };

@@ -1,5 +1,5 @@
-import withSuspense from 'components/HOC/WithSuspens';
-import { USER_DASHBOARD } from 'pages/pagesPath';
+import withSuspense from "components/HOC/WithSuspens";
+import { USER_DASHBOARD } from "pages/pagesPath";
 
 export const userRoutes = [
   {
@@ -7,5 +7,4 @@ export const userRoutes = [
     component: withSuspense({ page: "AuthPages/users/Dashboard" }),
     exact: true,
   },
-
 ];

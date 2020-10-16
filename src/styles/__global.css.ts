@@ -1,12 +1,12 @@
-import { css } from '@emotion/core';
+import { css } from "@emotion/core";
 
-import { BRAND_PRIMARY } from 'styles/__color';
+import { BRAND_PRIMARY } from "styles/__color";
 
 export default css`
   body {
     margin: 0;
     padding: 0;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: "Fira Sans", sans-serif;
     background: ${BRAND_PRIMARY};
   }
 

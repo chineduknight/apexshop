@@ -1,15 +1,9 @@
-import AuthPages from 'pages/AuthPages'
-import AdminPages from 'pages/AuthPages/admin'
-import UserPages from 'pages/AuthPages/users'
-import UnAuthPages from 'pages/UnAuthPages'
-import {
-  NOT_FOUND,
-  UNAUTHORIZED,
-  AUTH,
-  USER,
-  MANAGER
-} from './pagesPath';
-import withSuspense from 'components/HOC/WithSuspens';
+import AuthPages from "pages/AuthPages";
+import AdminPages from "pages/AuthPages/admin";
+import UserPages from "pages/AuthPages/users";
+import UnAuthPages from "pages/UnAuthPages";
+import withSuspense from "components/HOC/WithSuspens";
+import { NOT_FOUND, UNAUTHORIZED, AUTH, USER, MANAGER } from "./pagesPath";
 
 export default [
   {
