@@ -5,7 +5,7 @@ export function handleFetch<T = Record<string, any>>(
   status: Status,
   payload: any,
   key?: keyof T,
-  many = true
+  many = false
 ) {
   const { errors, data, pagination } = payload;
   let newStatus = {};
@@ -17,13 +17,22 @@ export function handleFetch<T = Record<string, any>>(
       errors: {},
     };
   } else if (status === "SUCCESS") {
-    newStatus = {
-      processing: false,
-      processed: true,
-      success: true,
-      data,
-      pagination,
-    };
+    if (many) {
+      newStatus = {
+        processing: false,
+        processed: true,
+        success: true,
+        data,
+        pagination,
+      };
+    } else {
+      newStatus = {
+        processing: false,
+        processed: true,
+        success: true,
+        data,
+      };
+    }
   } else {
     newStatus = {
       processing: false,

@@ -8,7 +8,7 @@ interface WithSuspenseProps {
 const withSuspense = (args: WithSuspenseProps): React.FC<any> => {
   const { page, data } = args;
 
-  return function (
+  return function ComponentWrapper(
     props: Record<string, any>
   ): React.ReactElement<Record<string, any>> {
     const LazyComponent = React.lazy(() => import(`pages/${page}`));
