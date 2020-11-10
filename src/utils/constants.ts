@@ -11,7 +11,7 @@ export const defaultSingleObjectState: SingleObjectState = {
   data: {},
 };
 
-export const defaultManyObjectState = {
+export const defaultManyObjectState: any = {
   ...commonState,
   data: [],
   pagination: {
@@ -20,3 +20,4 @@ export const defaultManyObjectState = {
     totalEntries: 0,
   },
 };
+

@@ -1,5 +1,5 @@
-import { ADMIN_DASHBOARD, USER_DASHBOARD } from "pages/pagesPath";
 import React, { useState } from "react";
+import { ADMIN_DASHBOARD, USER_DASHBOARD } from "pages/pagesPath";
 import { RouterProps } from "react-router";
 
 const AuthPages = (props: RouterProps) => {

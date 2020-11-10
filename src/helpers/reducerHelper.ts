@@ -1,4 +1,9 @@
 export type Status = "SUCCESS" | "REQUEST" | "ERROR";
+export type ActionTypesObject = {
+  request: string;
+  success: string;
+  error: string;
+};
 
 export function handleFetch<T = Record<string, any>>(
   state: T,
@@ -66,4 +71,17 @@ export function extractStatus(type: any) {
   }
 
   return status;
+}
+
+/**
+ * This creates a success, request and error action for the specified action name
+ * This makes creating action types a lot easier and less repetitive.
+ * @param name The name of the action
+ */
+export function createActionType(name: string): ActionTypesObject {
+  return {
+    request: `${name}_REQUEST`,
+    success: `${name}_SUCCESS`,
+    error: `${name}_ERROR`,
+  };
 }

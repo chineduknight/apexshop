@@ -1,7 +1,7 @@
 // import LandingPage from './LandingPage';
 import withSuspense from "components/HOC/WithSuspens";
 import Login from "./Login";
-import { LOGIN } from "../pagesPath";
+import { CART_PAGE, CART_PAGE2, LOGIN, PRODUCT_DETAIL } from "../pagesPath";
 
 export const publicRoutes = [
   // {
@@ -16,9 +16,19 @@ export const publicRoutes = [
   // },
 
   {
+    path: CART_PAGE,
+    component: withSuspense({ page: "UnAuthPages/CartPage" }),
+    exact: true,
+  },
+  {
     path: LOGIN,
     component: Login,
     // component: withSuspense({ page: "UnAuthPages/LoginPage" }),
+    exact: true,
+  },
+  {
+    path: PRODUCT_DETAIL,
+    component: withSuspense({ page: "UnAuthPages/Product" }),
     exact: true,
   },
   {

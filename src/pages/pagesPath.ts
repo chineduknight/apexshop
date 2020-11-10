@@ -10,4 +10,10 @@ export const ADMIN = "/admin";
 export const MANAGER = "/manager";
 
 export const USER_DASHBOARD = "/user/dashboard";
+// unauth routes
+export const PRODUCT_DETAIL = "/product/:id";
+export const CART_PAGE = "/cart/:id?";
+export const CART_PAGE2 = "/cart"
+
+// admin routes
 export const ADMIN_DASHBOARD = "/admin/dashboard";
